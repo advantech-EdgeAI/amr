@@ -1,93 +1,60 @@
-# amr_inspector_github
+# Advantech AMR
+
+AMR(autonomous mobile robot) are self-guided machines that can navigate and move in dynamic environments without human intervention or fixed infrastructure like wires or tape. AMR utilize sensors, AI, and machine learning to make real-time decisions for navigation and task execution.
+
+<a href="https://youtu.be/HAqT9Urdels"><img src="https://github.com/user-attachments/assets/e3d337df-a009-4d41-906b-936fb5eea78f"></a>
+
+Advantech ISP team release a software package combined with MIC-732, allow SI quickly deploy AMR or learn ReMEmbR architecture.
+
+# MIC-732
+## Features
+AI Inference System Based on NVIDIA Nova Orin for AMR Applications
+
+- Fanless and ultra-compact design
+- Embedded with NVIDIA® Jetson AGX Orin™ up to 275 TOPS
+- Supports 1 x 10GbE, 1 x 2.5GbE, 3 x USB 3.2 Gen 2 (10 Gbit/s)
+- Supports 2 x CANbus, 1 x mPCIe, 2 x Nano SIM slots
+- Support Total 8-ch GMSL3.0/2.0 with FAKRA connectors
+- Support NVIDIA Isaac Robot Operating System (ROS2)
+
+![image](https://github.com/user-attachments/assets/b9e4b16a-96fc-4006-aecd-8d522a5e556a)
 
 
+# ReMEmbR
 
-## Getting started
+ReMEmbR is a workflow that combines LLMs, VLMs and RAG (Retrieval-Augmented Generation) to enable robots to reason, answer questions, and take navigation actions in large areas using long-time memory action. By bringing the power of LLMs and VLMs to tackle reasoning, ReMEmbR strengthens the reasoning and adaptability of an integrated AI-based robotics stack.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+With sensor collaboration, Geomatics data being created real-time and save into database. After that, user can interact with robot by microphones.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+![image](https://github.com/user-attachments/assets/e39e73d7-e8f4-4aa3-acd7-42e1bf3ccab1)
 
-## Add your files
+Check out the demo [Video](https://youtu.be/IyAnNpTZ8q8) and see how we setup an AMR assistant in office. 
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## Memory phase
 
-```
-cd existing_repo
-git remote add origin https://172.17.4.45/isystem-ai-solution-engineering/amr_inspector_github.git
-git branch -M main
-git push -uf origin main
-```
+![Memory_Phase](https://github.com/user-attachments/assets/92008880-2cea-47bc-b6d1-00cbb1d2851b)
 
-## Integrate with your tools
+Memory-building phase is all about making memory work for robots. We take short segments of video, caption information with the captioner node, and then embed information including timestamps and coordinate into a vector database.
 
-- [ ] [Set up project integrations](https://172.17.4.45/isystem-ai-solution-engineering/amr_inspector_github/-/settings/integrations)
+![image](https://github.com/user-attachments/assets/4424c6eb-672a-41aa-81af-e5ea2529e268)
 
-## Collaborate with your team
+## Query phase
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+![Query_Phase](https://github.com/user-attachments/assets/07966a6b-8b50-479d-b917-3cafcbdad8ab)
 
-## Test and Deploy
+When user poses a question to robot, the LLM generates queries to the database, retrieving relevant information iteratively. The LLM can query for text information, position information depending on what the user is asking. This process repeats until the question is answered. 
 
-Use the built-in continuous integration in GitLab.
+![image](https://github.com/user-attachments/assets/86620ff0-c322-46cb-9960-3ba447df2408)
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+# Installation Guide
+## System Requirement
 
-***
+## MIC-732 installation
 
-# Editing this README
+## Server Installation
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+# Reference
+- [MIC-732-AO](https://www.advantech.com/zh-tw/products/965e4edb-fb98-429e-89ed-9a0a8435a7be/mic-732-ao/mod_232b907c-a285-452f-ac0c-28fdadd7d041)
+- [Advantech Enables Service AMR with ADATA and NVIDIA ReMEmbR](https://www.advantech.com/en-us/resources/news/advantech-at-gtc-2025-showcasing-cutting-edge-edge-ai-systems-software-innovation-and-ecosystem-partnerships-for-industrial--healthcare-ai#1)
+- [Advancing Robot Mobility and Whole-Body Control with Novel Workflows and AI Foundation Models from NVIDIA Research](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+- [Using Generative AI to Enable Robots to Reason and Act with ReMEmbR](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/?linkId=100000291727268&fbclid=IwY2xjawFgnlBleHRuA2FlbQIxMAABHbmgOaT8yNc6oe38kX_gvOSB85J_8tJbao-w1p4rtLY2GTj11lf36M4qIg_aem_YTzEU9oiVql78mXb1lhbWg&ncid=so-face-741088)
