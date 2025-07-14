@@ -1,0 +1,13 @@
+CaptionerNode:
+  image_topic: "/webcam_image"
+
+MemoryBuilderNode:
+  db_collection: "test_collection"
+#  db_ip: "127.0.0.1"
+#  db_ip: "172.17.4.122"
+  db_ip: "192.168.55.1"
+
+AgentNode:
+  db_collection: "test_collection"
+#  db_ip: "127.0.0.1"
+  db_ip: "192.168.55.1"
