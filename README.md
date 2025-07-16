@@ -58,3 +58,5 @@ When user poses a question to robot, the LLM generates queries to the database, 
 - [Advantech Enables Service AMR with ADATA and NVIDIA ReMEmbR](https://www.advantech.com/en-us/resources/news/advantech-at-gtc-2025-showcasing-cutting-edge-edge-ai-systems-software-innovation-and-ecosystem-partnerships-for-industrial--healthcare-ai#1)
 - [Advancing Robot Mobility and Whole-Body Control with Novel Workflows and AI Foundation Models from NVIDIA Research](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
 - [Using Generative AI to Enable Robots to Reason and Act with ReMEmbR](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/?linkId=100000291727268&fbclid=IwY2xjawFgnlBleHRuA2FlbQIxMAABHbmgOaT8yNc6oe38kX_gvOSB85J_8tJbao-w1p4rtLY2GTj11lf36M4qIg_aem_YTzEU9oiVql78mXb1lhbWg&ncid=so-face-741088)
+
+Looking for tech support or have a business inquiry? Let’s talk: [Contact Form](https://www.advantech.com/en/form/2bcb7004-44e9-4e70-9ef0-520f326e6141?callback=f51f1493-33ae-43e5-8172-cb8055499ec1)
