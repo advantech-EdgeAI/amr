@@ -2,7 +2,7 @@
 
 AMR(autonomous mobile robot) are self-guided machines that can navigate and move in dynamic environments without human intervention or fixed infrastructure like wires or tape. AMR utilize sensors, AI, and machine learning to make real-time decisions for navigation and task execution.
 
-<a href="https://youtu.be/HAqT9Urdels"><img src="https://github.com/user-attachments/assets/e3d337df-a009-4d41-906b-936fb5eea78f"></a>
+<a href="https://youtu.be/jdllfL0ToGg"><img src="https://github.com/user-attachments/assets/e3d337df-a009-4d41-906b-936fb5eea78f"></a>
 
 Advantech ISP team release a software package combined with MIC-732, allow SI quickly deploy AMR or learn ReMEmbR architecture.
 
