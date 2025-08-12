@@ -5,13 +5,20 @@
 **See. Speak. Navigate.**
 
 - **360° Surround Perception with 2D/3D Vision**
-Equipped with 4 GMSL 2D + 4 GMSL 3D cameras for real-time SLAM, obstacle avoidance, mobile pedestrian detection, and scene awareness with millisecond-level frame sync.
+
+    Equipped with 4 GMSL 2D + 4 GMSL 3D cameras for real-time SLAM, obstacle avoidance, mobile pedestrian detection, and scene awareness with millisecond-level frame sync.
+
 - **VLM-Driven Labeling + LLM Navigation**
-Integrated with NVIDIA® ReMEmbR, the AMR DevKit supports VLM-Driven Labeling + LLM Navigation that tags destinations and command with natural language.
+    
+    Integrated with NVIDIA® ReMEmbR, the AMR DevKit supports VLM-Driven Labeling + LLM Navigation that tags destinations and command with natural language.
+
 - **Edge AI Compute Accelerated by NVIDIA Jetson AGX Orin™**
-At the heart is the rugged, fanless MIC-732-AO, featuring NVIDIA Jetson AGX Orin™ with up to 275 TOPS of AI compute. It supports NVIDIA Isaac ROS and JetPack™ 6.0.
+
+    At the heart is the rugged, fanless MIC-732-AO, featuring NVIDIA Jetson AGX Orin™ with up to 275 TOPS of AI compute. It supports NVIDIA Isaac ROS and JetPack™ 6.0.
+
 - **Unified, Modular ROS 2 Architecture**
-Built on ROS 2, the AMR DevKit provides pre-validated hardware/software stack for faster development and deployment.
+
+    Built on ROS 2, the AMR DevKit provides pre-validated hardware/software stack for faster development and deployment.
 
 <a href="https://youtu.be/jdllfL0ToGg"><img src="./media/images/amr_overview.gif"></a>
 
