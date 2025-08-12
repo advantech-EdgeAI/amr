@@ -6,6 +6,10 @@ AMR(autonomous mobile robot) are self-guided machines that can navigate and move
 
 Advantech ISP team release a software package combined with MIC-732, allow SI quickly deploy AMR or learn ReMEmbR architecture.
 
+![](./media/images/Advantech_AMR%20DevKit_A4%20flyer_250811_1.png)
+
+![](./media/images/Advantech_AMR%20DevKit_A4%20flyer_250811_2.png)
+
 # MIC-732
 ## Features
 AI Inference System Based on NVIDIA Nova Orin for AMR Applications
