@@ -1,14 +1,19 @@
 # Advantech AMR
 
-AMR(autonomous mobile robot) are self-guided machines that can navigate and move in dynamic environments without human intervention or fixed infrastructure like wires or tape. AMR utilize sensors, AI, and machine learning to make real-time decisions for navigation and task execution.
+**Advantech Solution Pilot AMR DevKit** fuses 360° perception, edge AI, and VLM+LLM intelligence to build robots that perceive, label, and guide. It offers system integrators and equipment maker a fast path to upgrade AGVs into intelligent AMRs.
 
-<a href="https://youtu.be/jdllfL0ToGg"><img src="https://github.com/user-attachments/assets/e3d337df-a009-4d41-906b-936fb5eea78f"></a>
+**See. Speak. Navigate.**
 
-Advantech ISP team release a software package combined with MIC-732, allow SI quickly deploy AMR or learn ReMEmbR architecture.
+- **360° Surround Perception with 2D/3D Vision**
+Equipped with 4 GMSL 2D + 4 GMSL 3D cameras for real-time SLAM, obstacle avoidance, mobile pedestrian detection, and scene awareness with millisecond-level frame sync.
+- **VLM-Driven Labeling + LLM Navigation**
+Integrated with NVIDIA® ReMEmbR, the AMR DevKit supports VLM-Driven Labeling + LLM Navigation that tags destinations and command with natural language.
+- **Edge AI Compute Accelerated by NVIDIA Jetson AGX Orin™**
+At the heart is the rugged, fanless MIC-732-AO, featuring NVIDIA Jetson AGX Orin™ with up to 275 TOPS of AI compute. It supports NVIDIA Isaac ROS and JetPack™ 6.0.
+- **Unified, Modular ROS 2 Architecture**
+Built on ROS 2, the AMR DevKit provides pre-validated hardware/software stack for faster development and deployment.
 
-![](./media/images/Advantech_AMR%20DevKit_A4%20flyer_250811_1.png)
-
-![](./media/images/Advantech_AMR%20DevKit_A4%20flyer_250811_2.png)
+<a href="https://youtu.be/jdllfL0ToGg"><img src="./media/images/amr_overview.gif"></a>
 
 # MIC-732
 ## Features
