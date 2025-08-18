@@ -63,11 +63,12 @@ When user poses a question to robot, the LLM generates queries to the database, 
 ![image](https://github.com/user-attachments/assets/86620ff0-c322-46cb-9960-3ba447df2408)
 
 # Installation Guide
-## System Requirement
 
-## MIC-732 installation
+Under construction 🚧
 
-## Server Installation
+* System Requirement
+* MIC-732 installation
+* Server Installation
 
 # Reference
 - [MIC-732-AO](https://www.advantech.com/zh-tw/products/965e4edb-fb98-429e-89ed-9a0a8435a7be/mic-732-ao/mod_232b907c-a285-452f-ac0c-28fdadd7d041)
